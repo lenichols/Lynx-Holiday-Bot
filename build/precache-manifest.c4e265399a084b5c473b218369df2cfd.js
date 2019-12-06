@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9a42db0c0c22b3912ff8ed45ced07ab",
+    "revision": "7951557a173990ab9828e4bf3434ee61",
     "url": "/Lynx-Holiday-Bot/index.html"
   },
   {
-    "revision": "6e6b9253e55398e1442f",
+    "revision": "4e6e06eb104c1a8afa62",
     "url": "/Lynx-Holiday-Bot/static/css/2.bfc8b4c3.chunk.css"
   },
   {
-    "revision": "13d0caa2f5b563e1256d",
+    "revision": "b04ae182c3bdcc2a3386",
     "url": "/Lynx-Holiday-Bot/static/css/main.cb86f0cb.chunk.css"
   },
   {
-    "revision": "6e6b9253e55398e1442f",
-    "url": "/Lynx-Holiday-Bot/static/js/2.74ed2330.chunk.js"
+    "revision": "4e6e06eb104c1a8afa62",
+    "url": "/Lynx-Holiday-Bot/static/js/2.c3fb25da.chunk.js"
   },
   {
-    "revision": "13d0caa2f5b563e1256d",
-    "url": "/Lynx-Holiday-Bot/static/js/main.4b418c7f.chunk.js"
+    "revision": "b04ae182c3bdcc2a3386",
+    "url": "/Lynx-Holiday-Bot/static/js/main.78e17be6.chunk.js"
   },
   {
     "revision": "147c24d670c72d7ddd15",

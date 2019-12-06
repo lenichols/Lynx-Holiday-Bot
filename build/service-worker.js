@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Lynx-Holiday-Bot/precache-manifest.281eba449864f466834d58ae2fd3fc6e.js"
+  "/Lynx-Holiday-Bot/precache-manifest.c4e265399a084b5c473b218369df2cfd.js"
 );
 
 self.addEventListener('message', (event) => {
