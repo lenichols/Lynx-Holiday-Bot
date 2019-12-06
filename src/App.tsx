@@ -125,7 +125,7 @@ class App extends React.Component<any, any> {
           <img src={logo} className="App-logo" />
           <p className="Holiday-text">Holiday Bot</p>
           <p>
-            A fun Secret Santa Generator for Teams across McKesson.
+            A fun Secret Santa Generator for Teams across organizations.
           </p>
           <h3>Get Started</h3>
           <ul className="App-normal">
@@ -133,7 +133,7 @@ class App extends React.Component<any, any> {
             <li>2. Press <code>Generate</code> to pair teammembers</li>
             <li>3. Press <code>Print</code> or <code>Email</code> to finalize</li>
           </ul>
-          <hr/>
+          <span className="App-empty"></span>
           <p className="App-note">Your generated list will not be saved so be sure to print or email the list to yourself and your teammembers.</p>
           <section className="App-sectionone">
             <div className="App-formArea">

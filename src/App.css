@@ -94,11 +94,15 @@ h3 {
   margin: 10px 0;
 }
 
+.App-empty {
+  margin-top: 10px;
+}
+
 section.App-sectionone {
-  width: 80%;
+  width: 40%;
   background-color: #ffffff96;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 
 ul.App-normal {
