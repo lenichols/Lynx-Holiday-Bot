@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Lynx-Holiday-Bot/static/css/main.cb86f0cb.chunk.css",
+    "main.js": "/Lynx-Holiday-Bot/static/js/main.4b418c7f.chunk.js",
+    "main.js.map": "/Lynx-Holiday-Bot/static/js/main.4b418c7f.chunk.js.map",
+    "runtime-main.js": "/Lynx-Holiday-Bot/static/js/runtime-main.a3e6df63.js",
+    "runtime-main.js.map": "/Lynx-Holiday-Bot/static/js/runtime-main.a3e6df63.js.map",
+    "static/css/2.bfc8b4c3.chunk.css": "/Lynx-Holiday-Bot/static/css/2.bfc8b4c3.chunk.css",
+    "static/js/2.74ed2330.chunk.js": "/Lynx-Holiday-Bot/static/js/2.74ed2330.chunk.js",
+    "static/js/2.74ed2330.chunk.js.map": "/Lynx-Holiday-Bot/static/js/2.74ed2330.chunk.js.map",
+    "index.html": "/Lynx-Holiday-Bot/index.html",
+    "precache-manifest.281eba449864f466834d58ae2fd3fc6e.js": "/Lynx-Holiday-Bot/precache-manifest.281eba449864f466834d58ae2fd3fc6e.js",
+    "service-worker.js": "/Lynx-Holiday-Bot/service-worker.js",
+    "static/css/2.bfc8b4c3.chunk.css.map": "/Lynx-Holiday-Bot/static/css/2.bfc8b4c3.chunk.css.map",
+    "static/css/main.cb86f0cb.chunk.css.map": "/Lynx-Holiday-Bot/static/css/main.cb86f0cb.chunk.css.map",
+    "static/media/LynxLogo.svg": "/Lynx-Holiday-Bot/static/media/LynxLogo.d23c8b0e.svg",
+    "static/media/App.css": "/Lynx-Holiday-Bot/static/media/holdiday-bkg.913ec13a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3e6df63.js",
+    "static/css/2.bfc8b4c3.chunk.css",
+    "static/js/2.74ed2330.chunk.js",
+    "static/css/main.cb86f0cb.chunk.css",
+    "static/js/main.4b418c7f.chunk.js"
+  ]
+}
