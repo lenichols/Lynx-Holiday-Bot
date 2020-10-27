@@ -6,29 +6,30 @@ import {
 } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 import './App.css';
-
 class App extends React.Component<any, any> {
 
   state: {
     names: any[],
-    name: any[]
+    name: any[],
+    email: "",
+    popupOpen: false
   }
 
   inputRef: any;
-
+  emailRef: any;
   constructor(props: any) {
     super(props);
-    this.state={names:[], name: [] };
+    this.state = { names: [], name: [], email: "", popupOpen: false };
     this.updateInput = this.updateInput.bind(this);
     this.generate = this.generate.bind(this);
     this.save = this.save.bind(this);
     this.inputRef = React.createRef();
+    this.emailRef = React.createRef();
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.inputRef.current.focus();
   }
-
   downloadCSV(pair: any) {
     const arrayContent = pair;
     let csvContent = "data:text/csv;charset=utf-8,";
@@ -53,31 +54,40 @@ class App extends React.Component<any, any> {
     const content = (
       <div>
         <p className="quotes">In order to generate a randomized paired list,</p>
-        <p className="quotes"> you need to have an even number of persons</p>  
-        <p className="quotes"> and have at least two names added.</p>       
+        <p className="quotes"> you need to have an even number of persons</p>
+        <p className="quotes"> and have at least two names added.</p>
         <span className="quotes-from">― Santa Bot</span>
       </div>
     )
     PopupboxManager.open({ content })
   }
-
-
   openGeneratePopupbox(p) {
     const content = (
       <div>
-        <p className="quotes">Your Secret Santa list has been generated!<br/>Choose an option below.</p>
-
-        <p className="downloadLink">Email</p> 
-        <p className="blueLink">or</p> 
-        <p className="downloadLink"><a href="javascript:void(0)" onClick={() => this.downloadCSV(p)}>Download</a></p>       
+        <p className="quotes">Your Secret Santa list has been generated!<br />Choose an option below.</p>
+        <input
+          type="email"
+          name="email"
+          value={this.state.email}
+          onChange={this.updateInput}
+          id="App-emailInput"
+          placeholder="Please enter email here."
+          autoFocus
+        />
+        <p className="downloadLink">
+          <button id="App-emailButton" onClick={() => this.sendGeneratedEmail(p)}>Email</button>
+        </p>
+        <p className="blueLink">or</p>
+        <p className="downloadLink"><a href="#" onClick={() => this.downloadCSV(p)}>Download</a></p>
         {/* <span className="quotes-from">― Santa Bot</span> */}
       </div>
     )
     PopupboxManager.open({ content })
   }
-
+  sendGeneratedEmail(pairs) {
+    console.log("Bloop")
+  }
   generate() {
-
     if ((this.state.names.length >= 3) && (this.state.names.length % 2 == 0)) {
       console.log("List is even with total names = ", this.state.names.length);
 
@@ -86,7 +96,7 @@ class App extends React.Component<any, any> {
       const pairs: any[] = [];
 
       // as we need at least players to form a pair
-      while (this.state.names.length >= 2) { 
+      while (this.state.names.length >= 2) {
         const pair = [this.state.names.pop(), this.state.names.pop()];
 
         // Current pair
@@ -99,23 +109,25 @@ class App extends React.Component<any, any> {
       // All pairs
       console.log('All pairs', pairs);
       this.openGeneratePopupbox(pairs);
-
     } else {
       //alert("your array is not even, add one more name");
       this.openMessagePopupbox()
     }
-
   }
 
-  updateInput(event: any){
-    this.setState({name : event.target.value})
+  updateInput(event: any) {
+    console.log(event.target.name, event.target.value)
+    // this.setState({ name: event.target.value })
+    this.setState({ [event.target.name]: event.target.value });
   }
-  
   save(event: any) {
+    // stops save from happening if input is empty.
     event.preventDefault();
-    this.state.names.push(this.state.name);
-    this.setState({name: ''});
-    this.inputRef.current.focus();
+    if (this.state.name) {
+      this.state.names.push(this.state.name);
+      this.setState({ name: '' });
+      // this.inputRef.current.focus();
+    }
   }
 
   render() {
@@ -137,23 +149,23 @@ class App extends React.Component<any, any> {
           <p className="App-note">Your generated list will not be saved so be sure to print or email the list to yourself and your teammembers.</p>
           <section className="App-sectionone">
             <div className="App-formArea">
-            <form>
-              <input ref={this.inputRef} type="text" name="name" className="App-res" placeholder="Enter team members name" onChange={this.updateInput} value={this.state.name} />
-              <button onClick={this.save.bind(this)} type="submit">Add</button>
-            </form>
+              <form>
+                <input ref={this.inputRef} type="text" name="name" className="App-res" placeholder="Enter team members name" onChange={this.updateInput} value={this.state.name} />
+                <button onClick={this.save.bind(this)} type="submit">Add</button>
+              </form>
             </div>
           </section>
           <div>
-              <ul id="App-nameslist">
-              {this.state.names.map(function(name, i) {
-                      return <li key={i}>{name}</li>
+            <ul id="App-nameslist">
+              {this.state.names.map(function (name, i) {
+                return <li key={i}>{name}</li>
               })}
-              </ul>
-            </div>
-            <div>
+            </ul>
+          </div>
+          <div>
             <button id="App-generateButton" onClick={this.generate.bind(this)} type="button">Generate</button>
             <PopupboxContainer />
-            </div>
+          </div>
         </header>
       </div>
     );

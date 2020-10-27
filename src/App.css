@@ -64,8 +64,20 @@
   font-size: calc(7px + 1vmin);
   color: yellow;
 }
+input#App-emailInput{
+  font-size: 20px;
+  padding: 7px 14px;
+}
+button#App-emailButton{
+  color: #ffeaeb;
+  background-color: #109178;
+  font-weight: bold;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 20px;
+}
 
-button#App-generateButton {
+button#App-generateButton{
   color: #ffeaeb;
   font-size: 27px;
   font-weight: bold;
