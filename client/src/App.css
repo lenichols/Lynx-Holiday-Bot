@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito+Sans:wght@300;400&display=swap');
+:root{
+  --dark-red: #b3000c;
+  --red: #e40010;
+  --grey: #fafafa;
+  --green: #1fd537;
+  --dark-green: #00b32c;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color:var(--grey);
+}
+h1{
+  margin-top: 20px !important;
+}
+h1,h2,h3,h5{
+  font-family: "Mountains of Christmas", Arial, Helvetica, sans-serif;
+  color: var(--red);
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+  font-size: 90px;
+  margin-bottom: -5px;
+  padding-bottom: 0;
+}
+
+header h3{
+  margin-top: -5px;
+  padding-top: 0;
+  font-size: 40px;
+}
+
+header h5{
+  margin-top: 30px;
+  font-size: 30px;
+  color: var(--dark-green);
+  text-decoration: underline;
+}
+
+div.Rules{
+  padding: 5px;
+  width: 40%;
+  margin: 10px auto;
+  letter-spacing: .15rem;
+}
+
+div.Rules p{
+  margin: 0;
+}
+
+div.Rules p code{
+  color: var(--dark-red);
+}
+
+form.Form{
+  width: 40%;
+  margin: 0 auto;
+  background-color: var(--dark-green);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label{
+  color: var(--grey);
+}
+
+form label span{
+  color: var(--dark-red);
+}
+
+form input{
+  border-radius: 0 !important;
+}
+
+p.btn-para{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+p.btn-para button{
+    background-color: var(--red);
+    color: var(--grey);
+    border: none;
+    outline: none;
+    width: 150px;
+  }
+
+div.ErrorDiv{
+  width: 40%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  width: 40%;
+  margin: 40px auto 60px auto !important;
+  font-size: 25px;
+}
+ul.Og-List{
+  columns: 2;
+}
+
+.App-res {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+input#App-emailInput{
+  font-size: 20px;
+  padding: 7px 14px;
+}
+button#App-emailButton{
+  color: #ffeaeb;
+  background-color: #109178;
+  font-weight: bold;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+#PairedList-backBtn,
+#PairedList-backBtn:hover{
+  color: #ffeaeb;
+} 
+
+div#PairedList-nextBtns button,
+button#PairedList-submitBtn{
+  color: #ffeaeb;
+  /* font-size: 30px; */
+  font-weight: bold;
+  width: 150px;
+  padding: 10px;
+  background-color: #109178;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+footer{
+  background-color: var(--dark-green);
+  padding-top: 10px;
+}
+footer a{
+  color: var(--grey);
+}
+
+/* media queries */
+/* 600px */
+@media only screen and (max-width: 600px){
+  header h1{
+    font-size: 60px;
+  }
+  header h3{
+    font-size: 25px;
+  }
+
+  div.Rules{
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  form.Form{
+    width: 80%;
+  }
+
+  div.ErrorDiv{
+    width: 80%;
+  }
+
+  ul{
+    width: 80%;
+    font-size: 17px;
+  }
+}

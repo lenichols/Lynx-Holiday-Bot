@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap');
+
+.App {
+  text-align: center;
+  background-image: url('../assets/imgs/holdiday-bkg.jpg');
+  background-position: center;
+  padding: 10px;
+}
+
+.App-logo {
+  height: 8vmin;
+  margin-bottom: -21px;
+  margin-top: 20px;
+}
+
+.App-res {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.App-formArea {
+  /* display: block; */
+  width: 100%;
+  /* float: right; */
+}
+
+.App-formArea label {
+  font-size: calc(10px + 2vmin);
+}
+
+.App-formArea form input { 
+  padding: .5em 1em; 
+  width: 100%; 
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 27px;
+  color: #109178;
+}
+
+.App-formArea form button{ 
+  padding: .5em 1em; 
+  white-space: nowrap;
+  border-radius: 5px;
+  background-color: #f33838;
+  border: none;
+  font-size: 26px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  transform: scale(.8,.8);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-note {
+  font-size: calc(7px + 1vmin);
+  color: yellow;
+}
+input#App-emailInput{
+  font-size: 20px;
+  padding: 7px 14px;
+}
+button#App-emailButton{
+  color: #ffeaeb;
+  background-color: #109178;
+  font-weight: bold;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+a#App-generateButton{
+  text-decoration: none;
+}
+button#App-generateButton,
+a#App-generateButton{
+  color: #ffeaeb;
+  font-size: 27px;
+  font-weight: bold;
+  width: 200px;
+  /* display: block; */
+  padding: 14px;
+  background-color: #109178;
+  border-radius: 6px;
+  float: left;
+  margin: 10px;
+
+}
+
+div#App-number {
+  color: #ffeaeb;
+  font-size: 27px;
+  font-weight: bold;
+  width: 40px;
+  display: block;
+  padding: 14px;
+  background-color: #109178;
+  border-radius: 6px;
+  float: left;
+}
+
+h3 {
+  color: #09d3ac;
+  margin: 10px 0;
+}
+
+.App-empty {
+  margin-top: 10px;
+}
+div#App-errordiv{
+  margin-top: 20px;
+  background-color: rgba(255,255,255, 0.1);
+  width: 40%;
+  background-color: #ffffff96;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  width: 100%;
+}
+div#App-errordiv p.quotes{
+  color: black;
+}
+section.App-sectionone {
+  width: 100%;
+  background-color: #ffffff96;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+}
+
+ul.App-normal {
+  margin: 10px auto 0 auto;
+}
+
+.App-normal {
+  font-size: calc(7px + 2vmin);
+  line-height: calc(29px);
+  text-align: left;
+  /* width: 50%; */
+  min-width: 400px;
+  margin: auto auto;
+  list-style: none;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.Holiday-text {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: calc(63px + 4vmin);
+  margin: 0;
+}
+
+ul.App-normal li code {
+  color: #76d9c6 !important;
+}
+
+p.quotes {
+  color: #c53535;
+  font-size: 20px;
+}
+
+span.quotes-from {
+  color: #c53535;
+}
+
+p.blueLink {
+  color: #287ed9;
+}
+
+p.downloadLink {
+  color: red;
+  font-weight: bold;
+}
+
+p.downloadLink:before {
+  content: '→';
+  margin-right: 10px;
+  color: #109178;
+}
+
+p.downloadLink:after {
+  content: '←';
+  margin-left: 10px;
+  color: #109178;
+}
+
+ul#App-nameslist {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  list-style-position: inside;
+  font-size: 25px;
+  width: 70%;
+  padding-left: 0;
+}
+
+ul#App-nameslist li {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+ul#App-nameslist {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul#App-nameslist li:before {
+  content: '✓';
+  margin-right: 10px;
+}
+#PairedList-backBtn,
+#PairedList-backBtn:hover{
+  color: #ffeaeb;
+} 
+div#PairedList-nextBtns button,
+button#PairedList-submitBtn{
+  color: #ffeaeb;
+  /* font-size: 30px; */
+  font-weight: bold;
+  width: 150px;
+  padding: 10px;
+  background-color: #109178;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+ul#App-nameslist li span.List-deleteBtn{
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 414px){
+  ul#App-nameslist{
+    width: 100%;
+    columns: 1;
+  }
+}
