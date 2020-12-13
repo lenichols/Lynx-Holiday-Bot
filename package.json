@@ -9,7 +9,8 @@
     "dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "install": "cd client && npm install"
   },
   "author": "Philip Simmons and La Shauna Nichols",
   "license": "ISC",
