@@ -23,7 +23,6 @@ export default function AddNames(props) {
       <Helmet>
         <title>SECRET SANTA LIST GENERATOR | HOME</title>
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="CodeCrafters Acad" />
         <meta name="description" content="Free Random Secret Santa List Generator" />
         <meta name="keywords" content="free,secret,santa,secret,santa,list,lists,generator,list generator,gift,gifts,family,teams,coworkers,download,email,random list, random list generator" />
       </Helmet>
